@@ -4,6 +4,8 @@ import {
 	body_font,
 	header_height,
 	normal_font_size,
+	scroll_thumb_color,
+	scroll_thumb_color_alt,
 	text_color,
 	title_color
 } from './Variables';
@@ -20,11 +22,15 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		margin: ${header_height};
+		margin: ${header_height} 0 0 0;
 		font-family: ${body_font};
 		font-size: ${normal_font_size};
 		background-color: ${body_color};
 		color: ${text_color};
+
+		@media screen and (min-width: 767px) {
+			margin: 0;
+		}
 	}
 
 	h1, h2, h3 {
@@ -38,14 +44,37 @@ export const GlobalStyle = createGlobalStyle`
 	a {
 		text-decoration: none;
 	}
+
+	button,
+	input {
+		border: none;
+		outline: none;
+	}
+
+	button {
+		cursor: pointer;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&::-webkit-scrollbar {
+		width: .60rem;
+		border-radius: .5rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: ${scroll_thumb_color};
+		border-radius: .5rem;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: ${scroll_thumb_color_alt};
+	}
 `;
 
 export const Main = styled.main`
 	overflow: hidden;
-`;
-
-export const Container = styled.div`
-	max-width: 968px;
-	display: flex;
-	justify-content: center;
 `;

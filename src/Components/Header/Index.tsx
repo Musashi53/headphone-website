@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from '../../Assets/img/logo.png';
-import Nav  from '../Nav/index';
+import { HeaderContainer } from './Styles';
+
+import Nav from '../Nav/index';
 
 const Header: React.FC = () => {
 	return (
-		<header>
+		<HeaderContainer>
 			<Nav/>
-			
-		</header>
+		</HeaderContainer>
 	);
 }
 
