@@ -1,4 +1,12 @@
-import {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
+import {
+	body_color,
+	body_font,
+	header_height,
+	normal_font_size,
+	text_color,
+	title_color
+} from './Variables';
 
 export const GlobalStyle = createGlobalStyle`
 	* {
@@ -7,8 +15,31 @@ export const GlobalStyle = createGlobalStyle`
 		box-sizing: border-box;
 	}
 
-	body {
-		font-family: 'Poppins',sans-serif;
-		background-color: #000000;
+	html {
+		scroll-behavior: smooth;
 	}
+
+	body {
+		margin: ${header_height};
+		font-family: ${body_font};
+		font-size: ${normal_font_size};
+		background-color: ${body_color};
+		color: ${text_color};
+	}
+
+	h1, h2, h3 {
+		color: ${title_color};
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+	}
+`;
+
+export const Container = styled.div`
+	
 `;
