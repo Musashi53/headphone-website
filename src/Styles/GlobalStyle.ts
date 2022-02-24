@@ -40,6 +40,12 @@ export const GlobalStyle = createGlobalStyle`
 	}
 `;
 
+export const Main = styled.main`
+	overflow: hidden;
+`;
+
 export const Container = styled.div`
-	
+	max-width: 968px;
+	display: flex;
+	justify-content: center;
 `;
