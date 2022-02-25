@@ -1,3 +1,5 @@
+import React from "react";
+/*
 const Footer = () => {
   return (
     <footer class="footer section">
@@ -74,3 +76,4 @@ const Footer = () => {
 };
 
 export default Footer;
+*/

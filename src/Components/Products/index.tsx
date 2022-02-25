@@ -1,3 +1,5 @@
+import React from "react";
+/*
 const Products= () => {
   return (
     <section class="products section" id="products">
@@ -73,3 +75,4 @@ const Products= () => {
 };
 
 export default Products;
+*/

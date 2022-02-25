@@ -1,3 +1,5 @@
+import React from "react";
+/*
 const Discount = () => {
   return (
     <section class="discount section">
@@ -17,3 +19,4 @@ const Discount = () => {
 };
 
 export default Discount;
+*/

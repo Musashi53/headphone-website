@@ -2,8 +2,8 @@ export const header_height: string = `3rem`;
 
 /*========== Colors ==========*/
 export const color: number = 206;
-export const back_color: string = `hsl(${color}, 4%, 4%)`;
-export const back_color_alt: string = `hsl(${color}, 4%, 8%)`;
+export const black_color: string = `hsl(${color}, 4%, 4%)`;
+export const black_color_alt: string = `hsl(${color}, 4%, 8%)`;
 export const title_color: string = `hsl(${color}, 4%, 95%),`;
 export const text_color: string = `hsl(${color}, 4%, 75%)`;
 export const text_color_light: string = `hsl(${color}, 4%, 65%)`;
