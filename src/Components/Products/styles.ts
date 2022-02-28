@@ -11,7 +11,7 @@ export const ProductsContent = styled.div`
 `;
 
 export const ProductsImg = styled.img`
-
+  width: 70px;
 `;
 
 export const ProductsTitle = styled.h3``;
