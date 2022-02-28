@@ -3,8 +3,6 @@ import { mb_1_5 } from "../../Styles/Variables";
 
 export const SponsorSection = styled.section`
   padding: 4rem 0 2rem;
-  display: flex;
-  justify-content: center;
 `;
 
 export const SponsorContainer = styled.div`
@@ -13,9 +11,10 @@ export const SponsorContainer = styled.div`
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid red;
-  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  row-gap: 5rem;
 `;
 
 export const SponsorImg = styled.img`

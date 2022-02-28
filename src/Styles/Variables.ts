@@ -23,7 +23,7 @@ export const h2_font_size: string = `1.25rem`;
 export const h3_font_size: string = `1.125rem`;
 export const normal_font_size: string = `.938rem`;
 export const small_font_size: string = `.813rem`;
-export const smaller_font_size: string = `.75`;
+export const smaller_font_size: string = `.75rem`;
 export const text_line_height: string = `2rem`;
 
 /*
