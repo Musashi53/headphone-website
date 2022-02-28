@@ -1,6 +1,7 @@
 import React from "react";
 import { Title } from "../Title/styles";
 import {
+  ProductsSection,
   ProductsContainer,
   ProductsCard,
   ProductsContent,
@@ -15,11 +16,12 @@ import productImg2 from './../../Assets/img/product2.png';
 import productImg3 from './../../Assets/img/product3.png';
 import productImg4 from './../../Assets/img/product4.png';
 import productImg5 from './../../Assets/img/product5.png';
+import { Button } from "../Button/styles";
 
 const Products = () => {
   return (
-    <section>
-      <Title>Choose <br/> Your Style</Title>
+    <ProductsSection>
+      <Title className="products_line">Choose <br/> Your Style</Title>
       <ProductsContainer>
         <ProductsCard>
           <ProductsContent>
@@ -27,9 +29,9 @@ const Products = () => {
             <ProductsTitle>Black</ProductsTitle>
             <ProductsPrice>$249</ProductsPrice>
 
-            <ProductsButton>
+            <Button className="products_button">
               <i className="ri-shopping-bag-line"/>
-            </ProductsButton>
+            </Button>
           </ProductsContent>
         </ProductsCard>
 
@@ -39,9 +41,9 @@ const Products = () => {
             <ProductsTitle>Red Black</ProductsTitle>
             <ProductsPrice>$249</ProductsPrice>
 
-            <ProductsButton>
+            <Button className="products_button">
               <i className="ri-shopping-bag-line"/>
-            </ProductsButton>
+            </Button>
           </ProductsContent>
         </ProductsCard>
 
@@ -51,9 +53,9 @@ const Products = () => {
             <ProductsTitle>Night Black</ProductsTitle>
             <ProductsPrice>$249</ProductsPrice>
 
-            <ProductsButton>
+            <Button className="products_button">
               <i className="ri-shopping-bag-line"/>
-            </ProductsButton>
+            </Button>
           </ProductsContent>
         </ProductsCard>
 
@@ -63,9 +65,9 @@ const Products = () => {
             <ProductsTitle>Blue</ProductsTitle>
             <ProductsPrice>$249</ProductsPrice>
 
-            <ProductsButton>
+            <Button className="products_button">
               <i className="ri-shopping-bag-line"/>
-            </ProductsButton>
+            </Button>
           </ProductsContent>
         </ProductsCard>
 
@@ -75,13 +77,13 @@ const Products = () => {
             <ProductsTitle>Twilight gray</ProductsTitle>
             <ProductsPrice>$249</ProductsPrice>
 
-            <ProductsButton>
+            <Button className="products_button">
               <i className="ri-shopping-bag-line"/>
-            </ProductsButton>
+            </Button>
           </ProductsContent>
         </ProductsCard>
       </ProductsContainer>
-    </section>
+    </ProductsSection>
   )
 }
 

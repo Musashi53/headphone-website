@@ -9,4 +9,8 @@ export const Title = styled.h2`
   font-size: ${bigger_font_size};
   text-align: center;
   margin-bottom: ${mb_2_5};
+
+  &.products_line {
+    line-height: 4rem;
+  }
 `;

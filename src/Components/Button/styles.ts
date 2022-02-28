@@ -20,4 +20,12 @@ export const Button = styled.a`
     font-size: 1.2rem;
   }
 
+  &.products_button {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    padding: .5rem;
+    border-radius: .35rem;
+  }
+
 `;
