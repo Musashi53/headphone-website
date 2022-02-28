@@ -1,22 +1,21 @@
-import React from "react";
-/*
+import { DiscountAnimate, DiscountContainer, DiscountDescription, DiscountImg, DiscountTitle } from "./styles";
+import discountImg from '../../Assets/img/discount.png';
+
 const Discount = () => {
   return (
-    <section class="discount section">
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
-                        <p class="discount__description">Get it now, up to 50% off.</p>
-                        <a href="#" class="button button--flex">
-                            <i className="ri-shopping-bag-line button__icon"></i> Shop Now
-                        </a>
-                    </div>
-
-                    <img src="assets/img/discount.png" alt="" class="discount__img">
-                </div>
-            </section>
-  );
-};
+    <section>
+      <DiscountContainer>
+        <DiscountAnimate>
+          <DiscountTitle>Immerse yourself <br/> your music</DiscountTitle>
+          <DiscountDescription>Get it now, up to 50% off.</DiscountDescription>
+          <a>
+            <i className="ri-shopping-bag-line"/>
+          </a>
+        </DiscountAnimate>
+        <DiscountImg src={discountImg}/>
+      </DiscountContainer>
+    </section>
+  )
+}
 
 export default Discount;
-*/
