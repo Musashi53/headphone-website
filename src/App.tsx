@@ -8,6 +8,7 @@ import Case from './Components/Case';
 import Discount from './Components/Discount';
 import Products from './Components/Products';
 import Footer from './Components/Footer';
+import ScrollUp from './Components/Scroll Up';
 
 function App(): JSX.Element {
   return (
@@ -23,6 +24,7 @@ function App(): JSX.Element {
         <Products/>
       </Main>
       <Footer/>
+      <ScrollUp/>
     </div>
   );
 }
