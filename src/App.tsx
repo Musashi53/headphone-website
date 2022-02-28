@@ -21,8 +21,8 @@ function App(): JSX.Element {
         <Case/>
         <Discount/>
         <Products/>
-        <Footer/>
       </Main>
+      <Footer/>
     </div>
   );
 }
