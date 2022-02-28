@@ -1,20 +1,22 @@
-import { DiscountAnimate, DiscountContainer, DiscountDescription, DiscountImg, DiscountTitle } from "./styles";
+import { DiscountAnimate, DiscountContainer, DiscountDescription, DiscountImg, DiscountSection, DiscountTitle } from "./styles";
 import discountImg from '../../Assets/img/discount.png';
+import { Button } from "../Button/styles";
 
 const Discount = () => {
   return (
-    <section>
+    <DiscountSection>
       <DiscountContainer>
         <DiscountAnimate>
           <DiscountTitle>Immerse yourself <br/> your music</DiscountTitle>
           <DiscountDescription>Get it now, up to 50% off.</DiscountDescription>
-          <a>
+          <Button>
             <i className="ri-shopping-bag-line"/>
-          </a>
+            Shop Now
+          </Button>
         </DiscountAnimate>
         <DiscountImg src={discountImg}/>
       </DiscountContainer>
-    </section>
+    </DiscountSection>
   )
 }
 
