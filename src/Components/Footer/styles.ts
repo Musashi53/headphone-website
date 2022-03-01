@@ -20,6 +20,7 @@ export const FooterContainer = styled.div`
   @media screen and (min-width: 1024px) {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 3rem;
   }
 `;
 
@@ -92,6 +93,10 @@ export const FooterCopy = styled.p`
   margin-top: 5rem;
   margin-bottom: 1rem;
   text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 9rem;
+  }
 `;
 
 export const FooterCopyLink = styled.a`
