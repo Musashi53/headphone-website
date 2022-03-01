@@ -1,4 +1,5 @@
 import {
+  FooterSection,
   FooterContainer,
   FooterContent,
   FooterCopy,
@@ -18,7 +19,7 @@ import { Button } from '../Button/styles';
 
 const Footer = () => {
   return (
-    <footer>
+    <FooterSection>
       <FooterContainer>
         <FooterLogo>
           <img src={footerLogo}/>
@@ -95,7 +96,7 @@ const Footer = () => {
         &#169; YuriMendess. All right reserved
         </FooterCopyLink>
       </FooterCopy>
-    </footer>
+    </FooterSection>
   );
 };
 

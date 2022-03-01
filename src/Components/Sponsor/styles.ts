@@ -3,18 +3,27 @@ import { mb_1_5 } from "../../Styles/Variables";
 
 export const SponsorSection = styled.section`
   padding: 4rem 0 2rem;
+  display: flex;
+  justify-content: center;
 `;
 
 export const SponsorContainer = styled.div`
   max-width: 968px;
-  display: flex;
+  width: 90%;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
+  display: flex;
   align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  row-gap: 5rem;
+  justify-content: space-between;
+
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+    
+    &:nth-child(4) {
+      margin: 1rem;
+    }
+  }
+  
 `;
 
 export const SponsorImg = styled.img`

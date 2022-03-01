@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { black_color, body_font, container_color, font_medium, h3_font_size, mb_1, mb_1_5, mb_2, normal_font_size, smaller_font_size, text_color, text_color_light, white_color } from "../../Styles/Variables";
 
+export const FooterSection = styled.footer`
+  margin: 4rem 0 0 0;
+`;
+
 export const FooterContainer = styled.div`
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};

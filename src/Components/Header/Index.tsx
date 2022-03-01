@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { HeaderContainer } from './Styles';
 
 import Nav from '../Nav/index';
 
 const Header: React.FC = () => {
+	const [scrollY, setScrollY] = useState<boolean>(false);
+
+	const scrollWindow = window.pageYOffset;
+	
 	return (
-		<HeaderContainer>
+		<HeaderContainer scroll={scrollY}>
 			<Nav/>
 		</HeaderContainer>
 	);
