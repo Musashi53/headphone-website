@@ -34,4 +34,10 @@ export const DiscountImg = styled.img`
   position: absolute;
   top: 4rem;
   right: -11rem;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 `;

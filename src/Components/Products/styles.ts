@@ -13,6 +13,16 @@ export const ProductsContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem 1.5rem;
   padding-top: 3rem;
+
+  @media screen and (max-width: 340px) {
+    grid-template-columns: 142px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(3, 142px);
+    justify-content: center;
+  }
 `;
 
 export const ProductsCard = styled.article`

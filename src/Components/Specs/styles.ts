@@ -12,6 +12,12 @@ export const SpecsContainer = styled.div`
   display: grid;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 `;
 
 export const SpecsContent = styled.div`
@@ -50,5 +56,9 @@ export const SpecsImg = styled.img`
 
   @media screen and (max-width: 340px) {
     width: 200px;
+  }
+
+  @media screen and (min-width: 576px) {
+    position: initial; 
   }
 `;
