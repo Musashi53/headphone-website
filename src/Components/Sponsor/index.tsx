@@ -6,7 +6,7 @@ import sponsor2 from '../../Assets//img/sponsor2.png';
 import sponsor3 from '../../Assets//img/sponsor3.png';
 import sponsor4 from '../../Assets//img/sponsor4.png';
 
-const Sponsor = () => {
+const Sponsor: React.FC = () => {
   return (
     <SponsorSection>
       <SponsorContainer>

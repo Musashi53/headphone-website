@@ -11,9 +11,9 @@ import {
 import caseImg from '../../Assets/img/case.png';
 import { Button } from '../Button/styles';
 
-const Case = () => {
+const Case: React.FC = () => {
   return (
-    <CaseSection>
+    <CaseSection id="case">
       <Title>Case</Title>
       <CaseContainer>
         <div>

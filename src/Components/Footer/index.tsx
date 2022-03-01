@@ -17,7 +17,7 @@ import {
 import footerLogo from '../../Assets/img/logo.png';
 import { Button } from '../Button/styles';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <FooterSection>
       <FooterContainer>

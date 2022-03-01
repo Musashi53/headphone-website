@@ -15,9 +15,9 @@ import {HomeButton} from './Home Button/styles';
 
 import homeImage from '../../Assets/img/home.png';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <HomeSection>
+    <HomeSection id="home">
       <HomeContainer>
         <div>
           <HomeImg src={homeImage}/>

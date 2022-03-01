@@ -2,9 +2,9 @@ import { DiscountAnimate, DiscountContainer, DiscountDescription, DiscountImg, D
 import discountImg from '../../Assets/img/discount.png';
 import { Button } from "../Button/styles";
 
-const Discount = () => {
+const Discount: React.FC = () => {
   return (
-    <DiscountSection>
+    <DiscountSection id="discount">
       <DiscountContainer>
         <DiscountAnimate>
           <DiscountTitle>Immerse yourself <br/> your music</DiscountTitle>

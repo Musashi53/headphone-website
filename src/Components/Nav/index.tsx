@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import logo from '../../Assets/img/logo.png';
-import { NavContainer, NavMenu, NavList, NavItem, NavLink, NavClose, NavToggle, NavLogo } from './styles';
+import {
+  NavContainer,
+  NavMenu,
+  NavList,
+  NavItem,
+  NavLink,
+  NavClose,
+  NavToggle,
+  NavLogo
+} from './styles';
 
 const Nav = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -13,19 +22,19 @@ const Nav = () => {
       <NavMenu open={open}>
         <NavList>
           <NavItem>
-            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#home">Home</NavLink>
+            <NavLink onClick={() => setOpen(false)} href="#home">Home</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#specs">Specs</NavLink>
+            <NavLink onClick={() => setOpen(false)} href="#specs">Specs</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#case">Case</NavLink>
+            <NavLink onClick={() => setOpen(false)} href="#case">Case</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#products">Products</NavLink>
+            <NavLink onClick={() => setOpen(false)} href="#products">Products</NavLink>
           </NavItem>
         </NavList>
 

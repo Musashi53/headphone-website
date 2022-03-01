@@ -7,8 +7,7 @@ import {
   ProductsContent,
   ProductsImg,
   ProductsTitle,
-  ProductsPrice,
-  ProductsButton
+  ProductsPrice
 } from './styles';
 
 import productImg1 from './../../Assets/img/product1.png';
@@ -18,9 +17,9 @@ import productImg4 from './../../Assets/img/product4.png';
 import productImg5 from './../../Assets/img/product5.png';
 import { Button } from "../Button/styles";
 
-const Products = () => {
+const Products: React.FC = () => {
   return (
-    <ProductsSection>
+    <ProductsSection id="products">
       <Title className="products_line">Choose <br/> Your Style</Title>
       <ProductsContainer>
         <ProductsCard>
