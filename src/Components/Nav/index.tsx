@@ -13,19 +13,19 @@ const Nav = () => {
       <NavMenu open={open}>
         <NavList>
           <NavItem>
-            <NavLink href="#home">Home</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#home">Home</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink href="specs">Specs</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#specs">Specs</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink href="#case">Case</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#case">Case</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink href="#products">Products</NavLink>
+            <NavLink onClick={() => setOpen(false)} className="nav_link" href="#products">Products</NavLink>
           </NavItem>
         </NavList>
 
