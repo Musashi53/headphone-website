@@ -4,6 +4,10 @@ import { font_medium, mb_1_5, normal_font_size, smaller_font_size, white_color }
 export const SpecsSection = styled.section`
   padding: 4rem 0 2rem;
   display: grid;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const SpecsContainer = styled.div`
@@ -17,6 +21,11 @@ export const SpecsContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -60,5 +69,9 @@ export const SpecsImg = styled.img`
 
   @media screen and (min-width: 576px) {
     position: initial; 
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 300px;
   }
 `;

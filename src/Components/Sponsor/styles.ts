@@ -5,6 +5,10 @@ export const SponsorSection = styled.section`
   padding: 4rem 0 2rem;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const SponsorContainer = styled.div`
@@ -22,6 +26,11 @@ export const SponsorContainer = styled.div`
     &:nth-child(4) {
       margin: 1rem;
     }
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
   }
   
 `;

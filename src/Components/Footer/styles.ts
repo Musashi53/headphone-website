@@ -12,6 +12,15 @@ export const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fix, minmax(220px, 1fr));
   row-gap: 2rem;
+
+  @media screen and (min-width: 767px) {
+    grid-template-columns: .4fr .7fr .7fr 1fr;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const FooterLogo = styled.a`

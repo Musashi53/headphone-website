@@ -17,6 +17,10 @@ import {
 
 export const HomeSection = styled.section`
   padding: 4rem 0 2rem;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const HomeContainer = styled.div`

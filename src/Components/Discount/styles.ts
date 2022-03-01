@@ -1,8 +1,12 @@
 import styled from "styled-components";
-import { container_color, h3_font_size, mb_0_75, mb_1, mb_1_5 } from "../../Styles/Variables";
+import { container_color, h2_font_size, h3_font_size, mb_0_75, mb_1, mb_1_5 } from "../../Styles/Variables";
 
 export const DiscountSection = styled.section`
   padding: 4rem 0 0 0;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const DiscountContainer = styled.div`
@@ -14,6 +18,18 @@ export const DiscountContainer = styled.div`
   background-color: ${container_color};
   padding: 2rem 1.5rem;
   border-radius: .75rem;
+
+  @media screen and (min-width: 767px) {
+    grid-template-columns: 250px max-content;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 3rem 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const DiscountAnimate = styled.div`
@@ -23,6 +39,11 @@ export const DiscountAnimate = styled.div`
 export const DiscountTitle = styled.h2`
   font-size: ${h3_font_size};
   margin-bottom: ${mb_0_75};
+
+  @media screen and (min-width: 767px) {
+    font-size: ${h2_font_size};
+    margin-bottom: ${mb_1};
+  }
 `;
 
 export const DiscountDescription = styled.p`
@@ -39,5 +60,9 @@ export const DiscountImg = styled.img`
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 350px;
   }
 `;

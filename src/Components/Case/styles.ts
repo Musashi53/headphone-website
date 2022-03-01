@@ -1,9 +1,13 @@
 import styled from "styled-components";
-import { mb_1_5, text_line_height } from "../../Styles/Variables";
+import { mb_1_5, mb_2, text_line_height } from "../../Styles/Variables";
 
 export const CaseSection = styled.section`
   padding: 4rem 0 0 0;
   display: grid;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const CaseContainer = styled.div`
@@ -24,6 +28,15 @@ export const CaseContainer = styled.div`
     align-items: center;
     column-gap: 2rem;
   }
+
+  @media screen and (min-width: 767px) {
+    column-gap: 5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const CaseImg = styled.img`
@@ -39,6 +52,10 @@ export const CaseImg = styled.img`
 
   @media screen and (min-width: 576px) {
     position: initial
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 300px;
   }
 `;
 
@@ -57,4 +74,8 @@ export const CaseData = styled.div`
 export const CaseDescription = styled.p`
   margin-bottom: ${mb_1_5};
   line-height: ${text_line_height};
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: ${mb_2};
+  }
 `;

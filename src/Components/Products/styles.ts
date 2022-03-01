@@ -3,6 +3,10 @@ import { container_color, mb_1_5, small_font_size } from "../../Styles/Variables
 
 export const ProductsSection = styled.section`
   padding: 4rem 0 0 0;
+
+  @media screen and (min-width: 767px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const ProductsContainer = styled.div`
@@ -23,6 +27,17 @@ export const ProductsContainer = styled.div`
     grid-template-columns: repeat(3, 142px);
     justify-content: center;
   }
+
+  @media screen and (min-width: 767px) {
+    grid-template-columns: repeat(3, 162px);
+    gap: 6rem 3rem;
+    padding-top: 5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const ProductsCard = styled.article`
@@ -32,6 +47,11 @@ export const ProductsCard = styled.article`
   padding: .75rem;
   border-radius: .5rem;
   display: grid;
+
+  @media screen and (min-width: 767px) {
+    height: 152px;
+    padding: .85rem;
+  }
 `;
 
 export const ProductsContent = styled.div`
@@ -45,6 +65,10 @@ export const ProductsImg = styled.img`
   margin-right: auto;
   margin-left: auto;
   top: -3rem;
+
+  @media screen and (min-width: 767px) {
+    width: 95px;
+  }
 `;
 
 export const ProductsTitle = styled.h3`
