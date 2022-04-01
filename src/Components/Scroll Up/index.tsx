@@ -1,10 +1,15 @@
-import { useState } from "react";
 import { Scroll } from "./styles";
 
 const ScrollUp = () => {
-  const [showScroll, setShowScroll] = useState<boolean>(true);
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
-    <Scroll showScroll={showScroll}>
+    <Scroll onClick={() => scrollUp()}>
       <i className="ri-arrow-up-s-line"/>
     </Scroll>
   );

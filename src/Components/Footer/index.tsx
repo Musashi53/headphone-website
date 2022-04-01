@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     <FooterSection>
       <FooterContainer>
         <FooterLogo>
-          <img src={footerLogo}/>
+          <img src={footerLogo} alt="footer_logo"/>
         </FooterLogo>
 
         <FooterContent>

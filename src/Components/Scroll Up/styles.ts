@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import { black_color, container_color, white_color, z_tooltip } from "../../Styles/Variables";
 
-type ScrollProps = { showScroll: boolean };
-
 export const Scroll = styled.a`
   position: fixed;
   right: 1rem;
-  /* bottom: ${(props: ScrollProps) => props.showScroll ? '5rem' : '-20%'}; */
   bottom: 5rem;
   display: flex;
   background-color: ${container_color};
