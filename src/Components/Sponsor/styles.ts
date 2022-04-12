@@ -17,16 +17,9 @@ export const SponsorContainer = styled.div`
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
-  @media screen and (max-width: 400px) {
-    flex-wrap: wrap;
-    
-    &:nth-child(4) {
-      margin: 1rem;
-    }
-  }
 
   @media screen and (min-width: 1024px) {
     margin-left: auto;
@@ -37,6 +30,7 @@ export const SponsorContainer = styled.div`
 
 export const SponsorImg = styled.img`
   width: 90px;
+  margin: .5rem;
 
   @media screen and (min-width: 1024px) {
     width: 100px;
