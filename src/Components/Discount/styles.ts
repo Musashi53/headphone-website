@@ -19,6 +19,11 @@ export const DiscountContainer = styled.div`
   padding: 2rem 1.5rem;
   border-radius: .75rem;
 
+  @media screen and (min-width: 568px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 767px) {
     grid-template-columns: 250px max-content;
     justify-content: center;
@@ -32,9 +37,7 @@ export const DiscountContainer = styled.div`
   }
 `;
 
-export const DiscountAnimate = styled.div`
-
-`;
+export const DiscountAnimate = styled.div``;
 
 export const DiscountTitle = styled.h2`
   font-size: ${h3_font_size};
@@ -57,9 +60,8 @@ export const DiscountImg = styled.img`
   right: -11rem;
 
   @media screen and (min-width: 576px) {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
+    position: static;
+    
   }
 
   @media screen and (min-width: 1024px) {
