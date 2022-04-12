@@ -14,6 +14,7 @@ export const Button = styled.a`
 
   &:hover {
     background-color: ${black_color_alt};
+    cursor: pointer;
   }
 
   i {
