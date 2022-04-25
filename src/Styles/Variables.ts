@@ -26,17 +26,6 @@ export const small_font_size: string = `.813rem`;
 export const smaller_font_size: string = `.75rem`;
 export const text_line_height: string = `2rem`;
 
-/*
-export const biggest_font_size: string = `7.5rem`;
-export const bigger_font_size: string = `4.5rem`;
-export const big_font_size: string = `4rem`;
-export const h2_font_size: string = `1.5rem`;
-export const h3_font_size: string = `1.25rem`;
-export const normal_font_size: string = `1rem`; 
-export const small_font_size: string = `875rem`;
-export const smaller_font_size: string = `.813rem`;
-*/
-
 /*========== Font Weight ==========*/
 export const font_medium: number = 500;
 export const font_semi_bold: number = 600;
